@@ -1,6 +1,6 @@
-# Landing Page Cafeteria
+# Landing Page Danki Code
 
-Projeto desenvolvido como prática de HTML e CSS, com foco em estruturação de páginas, estilização e responsividade.
+Projeto desenvolvido como prática de HTML e CSS, com foco em estruturação de páginas, estilização de formulários e responsividade básica.
 
 ## Tecnologias usadas
 
@@ -9,14 +9,9 @@ Projeto desenvolvido como prática de HTML e CSS, com foco em estruturação de 
 
 ## Funcionalidades
 
-- Layout responsivo
+- Cabeçalho com logo
 - Seção inicial com chamada principal
-- Seção de produtos
-
-## Aprendizados
-
-Neste projeto pratiquei:
-- estrutura semântica com HTML;
-- uso de Flexbox;
-- organização de arquivos CSS;
-- responsividade básica.
+- Lista de benefícios
+- Formulário de contato/cadastro
+- Seção descritiva do projeto
+- Layout responsivo para telas menores

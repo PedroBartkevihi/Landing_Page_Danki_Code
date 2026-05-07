@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/Style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Landing Page Danki Code</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <div class="container cabecalho_conteudo">
+            <img src="src/images/logo.png" alt="Logo da Danki Code" class="cabecalho__logo">
+        </div><!--cabecalho_conteudo-->
+    </header><!--cabecalho-->
+
+    <main>
+        <section class="chamada">
+            <div class="container chamada_conteudo">
+                <div class="container_lista_chamada">
+                    <h1>Aprenda desenvolvimento web na prática</h1>
+                    <ul class="lista_chamada">
+                        <li>Construa páginas modernas com HTML5 e CSS3.</li>
+                        <li>Entenda a estrutura de uma landing page profissional.</li>
+                        <li>Pratique organização de arquivos e estilos reutilizáveis.</li>
+                        <li>Desenvolva layouts responsivos para desktop e celular.</li>
+                        <li>Dê os primeiros passos para se tornar webmaster.</li>
+                    </ul><!--lista_chamada-->
+                </div><!--container_lista_chamada-->
+
+                <div class="container_formulario">
+                    <form class="formulario">
+                        <h2>Preencha o formulário e inicie a sua caminhada para se tornar um webmaster</h2>
+
+                        <div class="formulario_campo">
+                            <label for="nome">Nome:</label>
+                            <input name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
+                        </div>
+
+                        <div class="formulario_campo">
+                            <label for="email">Email:</label>
+                            <input name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="formulario_campo">
+                            <label for="telefone">Telefone:</label>
+                            <input name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required>
+                        </div>
+
+                        <div class="formulario_botao">
+                            <button type="submit">Enviar</button>
+                        </div><!--formulario_botao-->
+                    </form><!--formulario-->
+                </div><!--container_formulario-->
+            </div><!--chamada_conteudo-->
+        </section><!--chamada-->
+
+        <section class="descricao">
+            <div class="container descricao_conteudo">
+                <h2></h2>
+                <p></p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

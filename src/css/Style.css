@@ -2,8 +2,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html, body{
     height: 100%;
 }
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    background-color: #212343;
+}
+
+.cabecalho_conteudo{
+    padding: 18px 2%;
+}
+
+.cabecalho_conteudo img{
+    padding-top: 8px;
+}
+
+.chamada{
+    background-image: url(../images/header_bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.chamada_conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 2%;
+}
+
+.container_lista_chamada{
+    width: 50%;
+    padding: 2%;
+    color: white;
+    border-radius: 2%;
+    background-color: rgba(19, 18, 18, 0.5);
+}
+
+.container_lista_chamada h1{
+    font-size: 26px;
+}
+
+.container_lista_chamada ul{
+    padding: 20px;
+}
+
+.container_lista_chamada li{
+    letter-spacing: 1px;
+    padding-top: 6px;
+}
+
+.container_formulario{
+    width: 35%;
+    background-color: white;
+    border: 6px solid black;
+    border-style: outset;
+}
+
+.formulario{
+    padding: 2%;
+}
+
+.formulario h2{
+    text-align: center;
+}
+
+.formulario_campo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.formulario input[type=text], .formulario input[type=email], .formulario input[type=tel]{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.formulario_botao{
+    text-align: center;
+}
+
+.formulario_botao button{
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 12px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
