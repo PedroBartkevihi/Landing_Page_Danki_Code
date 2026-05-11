@@ -35,7 +35,13 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos como:
 
 ## Como visualizar o projeto
 
-Você pode abrir o arquivo index.html diretamente no navegador.
+Você pode abrir o arquivo `index.html` diretamente no navegador.
+
+## Deploy
+
+O projeto está disponível online pelo GitHub Pages:
+
+[Ver projeto online]https://pedrobartkevihi.github.io/Landing_Page_Danki_Code/
 
 ## Status do projeto
 
