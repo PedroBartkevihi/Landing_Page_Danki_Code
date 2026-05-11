@@ -41,7 +41,7 @@ Você pode abrir o arquivo `index.html` diretamente no navegador.
 
 O projeto está disponível online pelo GitHub Pages:
 
-[Ver projeto online]https://pedrobartkevihi.github.io/Landing_Page_Danki_Code/
+[Ver projeto online](https://pedrobartkevihi.github.io/Landing_Page_Danki_Code/)
 
 ## Status do projeto
 
