@@ -197,3 +197,54 @@ footer{
     color: #888888;
 }
 
+/* Responsividade */
+
+@media screen and (max-width: 920px){
+
+    .cabecalho_conteudo{
+        text-align: center;
+    }
+
+    .chamada_conteudo{
+        flex-direction: column;
+        padding: 50px 2%;
+        gap: 40px;
+    }
+
+    .container_lista_chamada{
+        width: 90%;
+    }
+
+    .container_formulario{
+        width: 90%;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .container_planos{
+        flex-direction: column;
+    }
+
+    .planos_conteudo{
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .container_lista_chamada h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .formulario h2{
+        font-size: 19px;
+    }
+
+    .formulario_botao button{
+        width: 100%;
+    }
+}
