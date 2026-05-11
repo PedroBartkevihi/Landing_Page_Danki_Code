@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="icon" type="image/png" href="/src/images/computador-portatil.png">
+    <link rel="icon" type="image/png" href="src/images/computador-portatil.png">
     <title>Landing Page Danki Code</title>
 </head>
 <body>
@@ -29,22 +29,22 @@
                 </div><!--container_lista_chamada-->
 
                 <div class="container_formulario">
-                    <form class="formulario">
+                    <form class="formulario" action="#" method="post">
                         <h2>Preencha o formulário e inicie a sua caminhada para se tornar um webmaster</h2>
 
                         <div class="formulario_campo">
-                            <label>Nome:</label>
-                            <input name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
+                            <label for="nome">Nome:</label>
+                            <input id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
                         </div>
 
                         <div class="formulario_campo">
-                            <label>Email:</label>
-                            <input name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                            <label for="email">Email:</label>
+                            <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
                         </div>
 
                         <div class="formulario_campo">
-                            <label>Telefone:</label>
-                            <input name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required>
+                            <label for="telefone">Telefone:</label>
+                            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required>
                         </div>
 
                         <div class="formulario_botao">
@@ -63,7 +63,7 @@
                     melhorar sua base em HTML e CSS e preparar seus primeiros projetos para o portfólio.</p>
 
                 <div class="logo_descricao">
-                    <img src="/src/images/arrow.png" alt="Seta">
+                    <img src="src/images/arrow.png" alt="Seta">
                 </div><!--logo_descricao-->
             </div><!--descricao_conteudo-->
         </section><!--descricao-->
@@ -72,21 +72,21 @@
             <h2>Aprenda com quem está no mercado!</h2>
             <div class="container_planos">
                 <div class="planos_conteudo">
-                    <img src="/src/images/icon.png" alt="Computador">
+                    <img src="src/images/icon.png" alt="Computador">
                     <h4>Plano Start</h4>
                     <p>Para quem deseja aprender os primeiros conceitos de desenvolvimento web,
                         entendendo a base de HTML, CSS e organização de páginas.</p>
                 </div><!--planos_conteudo-->
 
                 <div class="planos_conteudo">
-                    <img src="/src/images/icon.png" alt="Computador">
+                    <img src="src/images/icon.png" alt="Computador">
                     <h4>Plano Plus</h4>
                     <p>Para quem quer avançar na criação de interfaces mais profissionais,
                         com foco em responsividade, formulários e boas práticas visuais.</p>
                 </div><!--planos_conteudo-->
 
                 <div class="planos_conteudo">
-                    <img src="/src/images/icon.png" alt="Computador">
+                    <img src="src/images/icon.png" alt="Computador">
                     <h4>Plano Pro</h4>
                     <p>Para quem busca desenvolver projetos mais completos, fortalecer o portfólio
                         e se preparar melhor para atuar no mercado.</p>
@@ -94,11 +94,11 @@
             </div><!--container_planos-->
         </section><!--planos-->
 
-        <section class="rodape">
-            <footer>
-                <h2>Todos os direitos reservados - Danki Code</h2>
-            </footer>
-        </section><!--rodape-->
     </main>
+
+    <footer class="rodape">
+        <h2>Landing Page de estudo - HTML e CSS</h2>
+    </footer>
+
 </body>
 </html>
