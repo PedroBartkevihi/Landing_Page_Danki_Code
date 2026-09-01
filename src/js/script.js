@@ -1,8 +1,3 @@
-/*
-	Landing Page Danki Code - interacoes da pagina
-	Feito em vanilla JS, sem dependencias externas.
-*/
-
 (function(){
 	"use strict";
 
@@ -12,7 +7,6 @@
 	var linksMenu = document.querySelectorAll(".cabecalho_menu a");
 
 
-	/* Menu mobile: abre e fecha o dropdown */
 	function abreMenu(){
 		menu.classList.add("aberto");
 		toggle.classList.add("ativo");
@@ -60,7 +54,6 @@
 	}
 
 
-	/* Sombra no cabecalho ao rolar a pagina */
 	function atualizaCabecalho(){
 		if(window.scrollY > 8){
 			cabecalho.classList.add("rolagem");
@@ -75,7 +68,6 @@
 	}
 
 
-	/* Revela os elementos [data-revelar] conforme entram na tela */
 	var alvos = document.querySelectorAll("[data-revelar]");
 	var semAnimacao = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -107,7 +99,6 @@
 	}
 
 
-	/* Formulario: feedback simples de envio (nao ha back-end neste projeto) */
 	var formulario = document.querySelector(".formulario");
 
 	if(formulario){
