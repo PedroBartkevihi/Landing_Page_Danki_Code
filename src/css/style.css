@@ -310,9 +310,19 @@ a{
 
 /* Descrição */
 
+.secao_kicker{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cor-destaque-escura);
+}
+
 .descricao{
-    padding: 20px 0;
-    background-color: #DDDDDD;
+    padding: var(--espaco-secao) 0 calc(var(--espaco-secao) - 20px);
+    background-color: var(--cor-fundo-alt);
     text-align: center;
 }
 
@@ -321,17 +331,17 @@ a{
 }
 
 .descricao_conteudo h2{
-    padding-top: 8px;
-    letter-spacing: 1px;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    letter-spacing: 0.5px;
 }
 
 .descricao_conteudo p{
-    max-width: 900px;
-    margin: 20px auto 0 auto;
-    letter-spacing: 0.5px;
-    font-size: 16px;
-    line-height: 1.6;
+    max-width: 760px;
+    margin: 18px auto 0 auto;
+    letter-spacing: 0.2px;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--cor-texto-suave);
 }
 
 .logo_descricao{
@@ -341,8 +351,15 @@ a{
 }
 
 .logo_descricao img{
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
+    filter: drop-shadow(0 6px 12px rgba(31, 34, 51, 0.25));
+    animation: seta-desce 2.4s ease-in-out infinite;
+}
+
+@keyframes seta-desce{
+    0%, 100%{ transform: translateY(0); }
+    50%{ transform: translateY(6px); }
 }
 
 /* Planos */
