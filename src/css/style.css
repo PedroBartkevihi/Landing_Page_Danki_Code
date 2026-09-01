@@ -365,50 +365,78 @@ a{
 /* Planos */
 
 .planos{
-    padding: 40px 10px;
+    padding: var(--espaco-secao) 10px;
+    text-align: center;
 }
 
-.planos h2{ 
-    padding: 40px 2%;
-    text-align: center;
-    color: #462663;
+.planos h2{
+    margin-bottom: clamp(28px, 4vw, 48px);
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
 }
 
 .container_planos{
     display: flex;
-    gap: 20px;
+    align-items: stretch;
+    gap: clamp(20px, 3vw, 32px);
 }
 
 .planos_conteudo{
-    width: 33.333%;
+    flex: 1 1 0;
     text-align: center;
-    padding: 20px 2%;
+    padding: clamp(28px, 3vw, 40px) clamp(20px, 2.5vw, 28px);
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra-suave);
+    transition: transform var(--transicao), box-shadow var(--transicao), border-color var(--transicao);
 }
 
-.planos_conteudo img,
-.planos_conteudo h4,
-.planos_conteudo p{
-    padding-top: 6px;
-    padding-bottom: 6px;
+.planos_conteudo:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--sombra);
+    border-color: transparent;
+}
+
+.planos_conteudo img{
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 16px;
+    padding: 14px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background-color: rgba(43, 46, 92, 0.08);
+}
+
+.planos_conteudo h4{
+    margin-bottom: 8px;
+    font-size: 1.15rem;
 }
 
 .planos_conteudo p{
-    line-height: 1.5;
+    color: var(--cor-texto-suave);
+    font-size: 0.98rem;
+    line-height: 1.6;
 }
 
 /* Rodapé */
 
 .rodape{
-    border-top: 3px solid #888888;
-    font-weight: normal;
+    background-color: var(--cor-primaria);
     text-align: center;
-    padding: 30px 2%;
-    color: #888888;
+    padding: clamp(36px, 6vw, 56px) 2%;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .rodape h2{
-    font-size: 14px;
-    font-weight: normal;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.rodape small{
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
 }
 
 /* Responsividade */
