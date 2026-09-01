@@ -11,14 +11,27 @@
     <title>Landing Page Danki Code</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="topo">
         <div class="container cabecalho_conteudo">
-            <img src="src/images/logo.png" alt="Logo da Danki Code" class="cabecalho_logo">
+            <a href="#topo" class="cabecalho_logo">
+                <img src="src/images/logo.png" alt="Logo da Danki Code">
+            </a>
+
+            <nav class="cabecalho_nav">
+                <button class="cabecalho_toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="cabecalho_menu" id="menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#chamada" class="cabecalho_cta">Começar agora</a></li>
+                </ul>
+            </nav><!--cabecalho_nav-->
         </div><!--cabecalho_conteudo-->
     </header><!--cabecalho-->
 
     <main>
-        <section class="chamada">
+        <section class="chamada" id="chamada">
             <div class="container chamada_conteudo">
                 <div class="container_lista_chamada">
                     <h1>Aprenda desenvolvimento web na prática</h1>
@@ -58,7 +71,7 @@
             </div><!--chamada_conteudo-->
         </section><!--chamada-->
 
-        <section class="descricao">
+        <section class="descricao" id="sobre">
             <div class="container descricao_conteudo">
                 <h2>Aprenda criando projetos reais desde o início</h2>
                 <p>A melhor forma de evoluir no desenvolvimento web é praticando com projetos visuais,
@@ -71,7 +84,7 @@
             </div><!--descricao_conteudo-->
         </section><!--descricao-->
 
-        <section class="container planos">
+        <section class="container planos" id="planos">
             <h2>Aprenda com quem está no mercado!</h2>
             <div class="container_planos">
                 <div class="planos_conteudo">
