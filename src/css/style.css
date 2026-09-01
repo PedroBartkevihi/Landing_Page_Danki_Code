@@ -467,6 +467,17 @@ input:focus-visible,
     opacity: 0.85;
 }
 
+[data-revelar]{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-revelar].visivel{
+    opacity: 1;
+    transform: none;
+}
+
 @media (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto;
@@ -478,6 +489,11 @@ input:focus-visible,
         animation-duration: 0.001ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important;
+    }
+
+    [data-revelar]{
+        opacity: 1;
+        transform: none;
     }
 }
 
