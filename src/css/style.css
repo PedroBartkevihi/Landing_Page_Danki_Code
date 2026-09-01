@@ -439,6 +439,48 @@ a{
     font-size: 13px;
 }
 
+/* Foco, seleção e movimento */
+
+::selection{
+    background-color: var(--cor-primaria-clara);
+    color: white;
+}
+
+::placeholder{
+    color: #9aa0b0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.cabecalho_menu a:focus-visible{
+    outline: 2px solid var(--cor-destaque-escura);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.cabecalho_logo img{
+    transition: opacity var(--transicao);
+}
+
+.cabecalho_logo:hover img{
+    opacity: 0.85;
+}
+
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
 /* Responsividade */
 
 @media screen and (max-width: 920px){
