@@ -483,25 +483,89 @@ input:focus-visible,
 
 /* Responsividade */
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 900px){
 
-    .cabecalho_conteudo{
+    .cabecalho_toggle{
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    .cabecalho_nav{
+        position: relative;
+    }
+
+    .cabecalho_menu{
+        position: absolute;
+        top: calc(100% + 14px);
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        width: min(260px, 72vw);
+        padding: 10px;
+        border-radius: var(--raio);
+        background-color: white;
+        box-shadow: var(--sombra);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity var(--transicao), transform var(--transicao), visibility var(--transicao);
+    }
+
+    .cabecalho_menu.aberto{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .cabecalho_menu a{
+        display: block;
+        padding: 11px 14px;
+        border-radius: var(--raio-sm);
+        color: var(--cor-texto);
+    }
+
+    .cabecalho_menu a:hover{
+        background-color: var(--cor-fundo-alt);
+        color: var(--cor-primaria);
+    }
+
+    .cabecalho_menu a.cabecalho_cta{
+        margin-top: 4px;
         text-align: center;
+    }
+
+    .cabecalho_menu a.cabecalho_cta:hover{
+        color: white;
+    }
+
+    .cabecalho_toggle.ativo span:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .cabecalho_toggle.ativo span:nth-child(2){
+        opacity: 0;
+    }
+
+    .cabecalho_toggle.ativo span:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
     }
 
     .chamada_conteudo{
         flex-direction: column;
-        padding: 50px 2%;
-        gap: 40px;
+        gap: 36px;
     }
 
     .container_lista_chamada{
-        width: 90%;
+        width: 100%;
+        max-width: 560px;
     }
 
     .container_formulario{
-        width: 90%;
-        max-width: 450px;
+        width: 100%;
+        max-width: 460px;
+        align-self: center;
     }
 }
 
@@ -509,27 +573,34 @@ input:focus-visible,
 
     .container_planos{
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
     }
 
     .planos_conteudo{
+        flex: none;
         width: 100%;
-        padding-top: 50px;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 560px){
+
+    .container{
+        padding: 0 16px;
+    }
 
     .container_lista_chamada h1{
-        font-size: 22px;
         text-align: center;
     }
 
-    .formulario h2{
-        font-size: 19px;
+    .container_lista_chamada > p{
+        text-align: center;
+        max-width: none;
     }
+}
 
-    .formulario_botao button{
-        width: 100%;
+@media screen and (max-width: 400px){
+
+    .cabecalho_logo img{
+        width: 128px;
     }
 }
